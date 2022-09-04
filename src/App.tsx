@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import { useContext, useEffect } from "react";
+import "./App.css";
+import LocationSelect from "./components/locationSelect";
+import Weather from "./components/weather";
+import { AppContext } from "./context";
+import { AUTHHOST } from "./http";
 
-function App() {
+export const App = () => {
+  const { dispatch } = useContext(AppContext);
+  const getToken = async () => {
+    try {
+      const response = await AUTHHOST.get("/getaccesstoken");
+      console.log(response);
+      dispatch({ type: "SET_TOKEN", payload: response.data.auth_token });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getToken();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LocationSelect />
+      <Weather />
     </div>
   );
-}
-
-export default App;
+};
