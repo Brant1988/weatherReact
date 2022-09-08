@@ -1,0 +1,15 @@
+.location_select {
+    height: 20%;
+    display: flex;
+    background-color: #9fc8f7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .location_select h1{
+color: white ;
+  }

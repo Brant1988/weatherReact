@@ -1,21 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #root {
  width: 100vw;
  height: 100vh;
   display: flex;
  justify-content: center;
  align-items: center;
- background-color: #649BDA;
+ background-color: #9fc8f7;
 }
 
 .App {
-  width: 70%;
-  height: 80%;
+  width: 950px;
+  height: 330px;
   padding: 20px 20px;
   background-color: white;
   border-radius: 10px;
-}
-.location_select {
   display: flex;
+  justify-content: space-between;
+  background-color: #787add;
 }
 
 
+.left_block {
+  width: 68%;
+}
+
+.right_block {
+  width: 30%;
+  background-color: #9fc8f7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}

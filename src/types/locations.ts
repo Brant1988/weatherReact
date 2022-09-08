@@ -11,3 +11,17 @@ export interface ICity {
 export interface IState {
   state_name: String;
 }
+
+export interface ILocation {
+  id: number;
+  name: string;
+  coord: {
+    lat: number;
+    lon: number;
+  };
+  country: string;
+  population: number;
+  sunrise: number;
+  sunset: number;
+  timezone: number;
+}

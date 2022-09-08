@@ -1,0 +1,39 @@
+.today_info {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .today_info ul{
+    margin-top: 25px;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+  }
+  .today_info ul li{
+   margin-bottom: 5px;
+  }
+  
+  .five_days {
+    height: 80%;
+  }
+  
+  .right_block img {
+    width: 100px;
+    height: 100px;
+  }
+  .right_block h1 {
+   color: white;
+   font-size: 50px;
+  }
+  .right_block h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+   }
+  
+  .temp_icon {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }

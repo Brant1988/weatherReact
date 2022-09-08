@@ -1,0 +1,40 @@
+.three_days {
+    display: flex;
+   margin-top: 10px;
+}
+
+.weather_card {
+    width: 205px;
+    height: 255px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9fc8f7;
+ 
+    border-radius: 10px;
+}
+.weather_card img{
+    width: 100px;
+    height: 100px;
+}
+.weather_card h1{
+    color: white;
+    font-size: 35px;
+  
+}
+.card_info {
+    width: 70%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_info ul {
+    list-style: none;
+    color: white;
+    font-size: 19px;
+  }
+  .card_info ul li{
+margin-top: 5px;
+  }
